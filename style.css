@@ -1,0 +1,219 @@
+body {
+    font-weight: 400;
+    font-family: 'SFProDisplay', sans-serif;
+    line-height: normal;
+    background: #FFFFFF;
+    color: #000000;
+    margin: 0;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main_resume{
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.main_resume_container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.resume_post_block{
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.resume_post_info{
+    width: 65%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.resume_img_container{
+    margin: 10px;
+}
+
+.resume_post_title{
+    font-size: 30px;
+}
+
+.resume_salary_container{
+    width: 30%;
+
+}
+
+.resume_salary_title{
+    font-size: 15px;
+}
+
+.resume_salary{
+    font-size: 30px;
+}
+
+.resume_skills_container{
+    padding: 30px 15px 20px 15px;
+    border-bottom: 1px solid black;
+}
+
+.resume_skills_title{
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resume_skills_block{
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+}
+.resume_skills_list{
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume_skills_list li{
+    margin: 30px;
+    list-style-type: circle;
+    max-width: 170px;
+}
+
+.resume_sertificate_block{
+    display: flex;
+    align-items: center;
+    padding: 30px 15px 20px 15px;
+}
+
+.resume_diploma_info{
+    text-align: left;
+    width: 50%;
+}
+
+.resume_diploma_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.resume_diploma_img_container{
+    width: 50%;
+}
+
+.resume_contact_info_container{
+    float: right;
+}
+
+.header_list_elem{
+    display: inline;
+    margin-right: 40px;
+
+}
+
+.header_list_elem a{
+    text-decoration: none;
+    color: black;
+}
+
+.header_list_elem a:hover{
+    color: dodgerblue;
+    transition: 0.5s;
+}
+
+.header_list{
+    display: flex;
+    justify-content: flex-end
+}
+
+.copyright{
+    font-size: 15px;
+    text-align: center;
+}
+
+.study, .about_me_p{
+    font-size: 15px;
+}
+
+@media (max-width: 755px){
+
+    .main_resume{
+        border: none;
+    }
+    .resume_post_block{
+        flex-direction: column;
+    }
+    .resume_post_info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .resume_salary_container{
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+    .resume_skills_title{
+        text-align: center;
+    }
+    .resume_sertificate_block{
+        flex-direction: column;
+    }
+
+    .resume{
+        font-size: 40px;
+        text-align: left;
+    }
+    .resume_post_title{
+        font-size: 17px;
+    }
+    .resume_diploma_title{
+        font-size: 17px;
+    }
+    .resume_salary{
+        font-size: 17px;
+    }
+    .title_in_carousel{
+        font-size: 20px;
+    }
+
+    .resume_contact_info_container p{
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px){
+    .resume_skills_list{
+        display: block;
+    }
+    .resume_skills_list li{
+        min-width: 100%;
+        margin: 15px;
+    }
+
+    .resume_diploma_info{
+        width: 95%;
+    }
+
+    .resume_diploma_img_container{
+        width: 90%;
+    }
+
+    header{
+        display: none;
+    }
+}
