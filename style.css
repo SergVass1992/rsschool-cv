@@ -8,7 +8,7 @@ body {
 
 }
 
-p {
+p, h1 {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -68,7 +68,7 @@ p {
     font-size: 30px;
 }
 
-.resume_skills_container{
+.resume_skills_container, .resume_education_container, .resume_code_container{
     padding: 30px 15px 20px 15px;
     border-bottom: 1px solid black;
 }
@@ -118,6 +118,14 @@ p {
 
 .resume_contact_info_container{
     float: right;
+    list-style: none;
+    min-width: 250px;
+    text-align: left;
+}
+
+.resume_contact_info_container li{
+   text-decoration: none;
+    margin-bottom: 6px;
 }
 
 .header_list_elem{
@@ -150,7 +158,22 @@ p {
     font-size: 15px;
 }
 
-@media (max-width: 755px){
+.code_block{
+    font-family: Consolas;
+    color: darkred
+}
+
+.resume_img_container:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+h2:hover{
+    transition: 0.5s;
+    font-size: 23px;
+}
+
+@media (max-width: 800px){
 
     .main_resume{
         border: none;
@@ -196,7 +219,7 @@ p {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 658px){
     .resume_skills_list{
         display: block;
     }
